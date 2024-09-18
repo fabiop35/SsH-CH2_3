@@ -4,12 +4,14 @@ import com.ssh.bean.Parrot;
 import com.ssh.bean.Person;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ComponentScan(basePackages = "com.ssh.bean")
 public class ProjectConfig {
 
-    @Bean
+    /*@Bean
     public Parrot parrot() {
         Parrot p = new Parrot();
         p.setName("Koko");
@@ -23,5 +25,5 @@ public class ProjectConfig {
         //p.setParrot(parrot());
         p.setParrot(parrot);
         return p;
-    }
+    }*/
 }
